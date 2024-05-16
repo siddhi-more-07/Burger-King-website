@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />    
+    <link rel="stylesheet" href="style.css">
+    <title>Burger King</title>
+</head>
+
+<body>
+    <div class="container">
+        <!-- menu for mobile -->
+        <div class="navbar">
+            <img src="images/logo.png" alt="logo">
+            <div class="menu">
+                <!-- desktop menu -->
+                <div class="desktop-menu">
+                    <ul>
+                        <li><svg class="desktop-search-icon" xmlns="http://www.w3.org/2000/svg" height="24px"
+                                viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
+                                <path
+                                    d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z" />
+                            </svg></li>
+                        <a href="#home-section">
+                            <li>Home</li>
+                        </a>
+                        <a href="#menu-section">
+                            <li>Menu</li>
+                        </a>
+                        <a href="#platters-section">
+                            <li>Platter</li>
+                        </a>
+                        <a href="#map">
+                            <li>NearBy Stores</li>
+                        </a>
+                        <a href="#reviews">
+                            <li>Reviews</li>
+                        </a>
+                        <a href="#contact">
+                            <li>Contact</li>
+                        </a>
+                    </ul>
+                </div>
+
+                <!-- mobile menu -->
+                <div class="mobile-menu">
+                    <svg class="menu-btn" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                        width="24px" fill="#e8eaed">
+                        <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                    </svg>
+                </div>
+
+                <!-- mobile menubar -->
+                <div class="mobile-menubar-background">
+                    <div class="mobile-menubar">
+                        <ul>
+                            <li><svg class="mobile-search-icon" xmlns="http://www.w3.org/2000/svg" height="24px"
+                                    viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
+                                    <path
+                                        d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z" />
+                                </svg></li>
+                            <a href="#home-section">
+                                <li>Home</li>
+                            </a>
+                            <a href="#menu-section">
+                                <li>Menu</li>
+                            </a>
+                            <a href="#platters-section">
+                                <li>Platter</li>
+                            </a>
+                            <a href="#map">
+                                <li>NearBy Stores</li>
+                            </a>
+                            <a href="#reviews">
+                                <li>Reviews</li>
+                            </a>
+                            <a href="#contact">
+                                <li>Contact</li>
+                            </a>
+                        </ul>
+                    </div>
+
+                    <!-- close mobile menu -->
+                    <div class="mobile-menu-close">
+                        <svg class="close-menu-icon" xmlns="http://www.w3.org/2000/svg" height="24px"
+                            viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
+                            <path
+                                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- search bar -->
+        <div class="serch-bar">
+            <div class="search-icon-contain">
+                <svg class="showSearchBarBtn" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                    width="24px" fill="black">
+                    <path
+                        d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z" />
+                </svg>
+            </div>
+            <input type="search" name="search-bar-input" id="search-bar-input" placeholder="Search here">
+            <svg class="close-searchBar" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                width="24px" fill="#e8eaed">
+                <path
+                    d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+            </svg>
+        </div>
+
+        <!-- cover section -->
+        <div class="cover" id="home-section">
+            <div class="cover-burger-image"></div>
+            <div class="cover-burger-lighten"></div>
+        </div>
+
+        <!-- Hemopage section -->
+        <div class="homepage-section" data-aos="slide-up" data-aos-duration="6s">
+            <span style="padding-bottom: 2rem;">&#128523; <span class="heading">Delicious Burgers Await You
+                </span></span>
+            <span class="desc">we believe in serving more than just burgers; we serve experiences. Our commitment to
+                quality ingredients, bold flavors, and exceptional service sets us apart as the ultimate destination for
+                burger lovers.</span>
+            <button>Our Menu &#128293;</button>
+        </div>
+
+        <!-- about section -->
+        <div class="about-section">
+            <div class="heading">Why Choose Burger King?</div>
+            <div class="about-services">
+
+                <div class="about-block" data-aos="slide-up">
+                    <div class="emoji">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px"
+                            fill="black">
+                            <path
+                                d="M160-120q-33 0-56.5-23.5T80-200v-120h800v120q0 33-23.5 56.5T800-120H160Zm0-120v40h640v-40H160Zm320-180q-36 0-57 20t-77 20q-56 0-76-20t-56-20q-36 0-57 20t-77 20v-80q36 0 57-20t77-20q56 0 76 20t56 20q36 0 57-20t77-20q56 0 77 20t57 20q36 0 56-20t76-20q56 0 79 20t55 20v80q-56 0-75-20t-55-20q-36 0-58 20t-78 20q-56 0-77-20t-57-20ZM80-560v-40q0-115 108.5-177.5T480-840q183 0 291.5 62.5T880-600v40H80Zm400-200q-124 0-207.5 31T166-640h628q-23-58-106.5-89T480-760Zm0 520Zm0-400Z" />
+                        </svg>
+                    </div>
+                    <h3>Best Quality</h3>
+                    <div class="desc">Discover unparalleled quality in every bite, ensuring a memorable dining
+                        experience.</div>
+                </div>
+
+                <div class="about-block" data-aos="slide-up">
+                    <div class="emoji">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="38px" viewBox="0 -960 960 960" width="38px"
+                            fill="black">
+                            <path
+                                d="M440-120v-80h320v-284q0-117-81.5-198.5T480-764q-117 0-198.5 81.5T200-484v244h-40q-33 0-56.5-23.5T80-320v-80q0-21 10.5-39.5T120-469l3-53q8-68 39.5-126t79-101q47.5-43 109-67T480-840q68 0 129 24t109 66.5Q766-707 797-649t40 126l3 52q19 9 29.5 27t10.5 38v92q0 20-10.5 38T840-249v49q0 33-23.5 56.5T760-120H440Zm-80-280q-17 0-28.5-11.5T320-440q0-17 11.5-28.5T360-480q17 0 28.5 11.5T400-440q0 17-11.5 28.5T360-400Zm240 0q-17 0-28.5-11.5T560-440q0-17 11.5-28.5T600-480q17 0 28.5 11.5T640-440q0 17-11.5 28.5T600-400Zm-359-62q-7-106 64-182t177-76q89 0 156.5 56.5T720-519q-91-1-167.5-49T435-698q-16 80-67.5 142.5T241-462Z" />
+                        </svg>
+                    </div>
+                    <h3>24/7 Service</h3>
+                    <div class="desc">Get assistance anytime, day or night, with our 24/7 service guarantee</div>
+                </div>
+
+                <div class="about-block" data-aos="slide-up">
+                    <div class="emoji">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px"
+                            fill="black">
+                            <path
+                                d="M240-160q-50 0-85-35t-35-85H40v-440q0-33 23.5-56.5T120-800h560v160h120l120 160v200h-80q0 50-35 85t-85 35q-50 0-85-35t-35-85H360q0 50-35 85t-85 35Zm0-80q17 0 28.5-11.5T280-280q0-17-11.5-28.5T240-320q-17 0-28.5 11.5T200-280q0 17 11.5 28.5T240-240ZM120-360h32q17-18 39-29t49-11q27 0 49 11t39 29h272v-360H120v360Zm600 120q17 0 28.5-11.5T760-280q0-17-11.5-28.5T720-320q-17 0-28.5 11.5T680-280q0 17 11.5 28.5T720-240Zm-40-200h170l-90-120h-80v120ZM360-540Z" />
+                        </svg>
+                    </div>
+                    <h3>Free Delivery</h3>
+                    <div class="desc">Enjoy hassle-free delivery straight to your doorstep, on us.</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- menu section -->
+        <div class="menu-section" id="menu-section">
+            <div class="menu-section-head">
+                <svg class="burger-menu-icon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                    width="24px" fill="#e8eaed">
+                    <path
+                        d="m175-120-56-56 410-410q-18-42-5-95t57-95q53-53 118-62t106 32q41 41 32 106t-62 118q-42 44-95 57t-95-5l-50 50 304 304-56 56-304-302-304 302Zm118-342L173-582q-54-54-54-129t54-129l248 250-128 128Z" />
+                </svg>
+                <div class="heading">Our Menu</div>
+            </div>
+
+            <!-- cheese burger -->
+            <div class="menu-items" data-aos="slide-up" data-aos-duration="8s">
+                <div class="menu-item-cards">
+                    <img src="images/cheese-burger.png" alt="cheese humburger">
+                    <div class="star-ratings">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </div>
+                    <div class="menu-item-name">Cheese Burger</div>
+                    <div class="price">Rs. 150/-</div>
+                    <button>Add To Cart</button>
+                </div>
+
+                <!-- vggie burger -->
+                <div class="menu-item-cards">
+                    <img src="images/veggie_burger.png" alt="veggie_burger">
+                    <div class="star-ratings">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </div>
+                    <div class="menu-item-name">Veggie Burger</div>
+                    <div class="price">Rs. 180/-</div>
+                    <button>Add To Cart</button>
+                </div>
+
+                <!-- turkey burger -->
+                <div class="menu-item-cards">
+                    <img src="images/turkey-burger.png" alt="Turkey burger">
+                    <div class="star-ratings">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </div>
+                    <div class="menu-item-name">Turkey Burger</div>
+                    <div class="price">Rs. 200/-</div>
+                    <button>Add To Cart</button>
+                </div>
+            </div>
+
+            <br><br>
+
+            <div class="menu-items" data-aos="slide-up" data-aos-duration="8s">
+                <div class="menu-item-cards">
+                    <img src="images/mushroom burger.png" alt="mushroom burger">
+                    <div class="star-ratings">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </div>
+                    <div class="menu-item-name">Mushroom Burger</div>
+                    <div class="price">Rs. 250/-</div>
+                    <button>Add To Cart</button>
+                </div>
+
+                <!-- vggie burger -->
+                <div class="menu-item-cards">
+                    <img src="images/onion-burger.png" alt="onion-burger">
+                    <div class="star-ratings">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </div>
+                    <div class="menu-item-name">Onion Burger</div>
+                    <div class="price">Rs. 100/-</div>
+                    <button>Add To Cart</button>
+                </div>
+
+                <!-- turkey burger -->
+                <div class="menu-item-cards">
+                    <img src="images/Chinese_hamburger.png" alt="Chinese hamburger">
+                    <div class="star-ratings">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </div>
+                    <div class="menu-item-name">Chinese hamburger</div>
+                    <div class="price">Rs. 250/-</div>
+                    <button>Add To Cart</button>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- platters section -->
+        <div class="platters-section" id="platters-section">
+            <div class="heading">Platters We Offer</div>
+            <div class="platters-items">
+
+                <div class="platter-items-card">
+                    <img src="images/TurkeyHam.png" alt="Turkey Ham">
+                    <span class="platter-price">Rs. 180/-</span>
+                    <span>Turkey Ham Croissan'wich® with Egg</span>
+                </div>
+
+                <div class="platter-items-card">
+                    <img src="images/PancakesWithSausagePlatter.png" alt="PancakesWithSausagePlatter">
+                    <span class="platter-price">Rs. 250/-</span>
+                    <span>Pancakes with Sausage Platter</span>
+                </div>
+
+                <div class="platter-items-card">
+                    <img src="images/TurkeyHam&CheeseOmelettePlatter_1-02.png" alt="TurkeyHam&CheeseOmelettePlatter">
+                    <span class="platter-price">Rs. 300/-</span>
+                    <span>Turkey Ham & Cheese Omelette Platter</span>
+                </div>
+
+                <div class="platter-items-card">
+                    <img src="images/ChickenCrisp.png" alt="Chicken Croissan'wich®">
+                    <span class="platter-price">Rs. 200/-</span>
+                    <span>Chicken Croissan'wich®</span>
+                </div>
+
+                <div class="platter-items-card">
+                    <img src="images/MushroomSwiss.png" alt="MushroomSwiss">
+                    <span class="platter-price">Rs. 150/-</span>
+                    <span>Mushroom Swiss Croissan'wich® with Egg</span>
+                </div>
+
+                <div class="platter-items-card">
+                    <img src="images/TurkeySausage.png" alt="TurkeySausage">
+                    <span class="platter-price">Rs. 200/-</span>
+                    <span>Chicken Sausage Croissan'wich®</span>
+                </div>
+
+                <div class="platter-items-card">
+                    <img src="images/HashBrowns.png" alt="HashBrowns">
+                    <sapn class="platter-price">Rs. 150/-</sapn>
+                    <span>Hashbrowns</span>
+                </div>
+
+                <div class="platter-items-card">
+                    <img src="images/0-CheesyFries.png" alt="0-CheesyFries">
+                    <sapn class="platter-price">Rs. 120/-</sapn>
+                    <span>Cheesy Fries</span>
+                </div>
+
+                <div class="platter-items-card">
+                    <img src="images/0-MexicanDrumlets.png" alt="Mexican Drumlets">
+                    <sapn class="platter-price">Rs. 200/-</sapn>
+                    <span>Mexican Drumlets</span>
+                </div>
+
+                <div class="platter-items-card">
+                    <img src="images/French Fries_300x270_2.png" alt="French Fries">
+                    <sapn class="platter-price">Rs. 150/-</sapn>
+                    <span>French Fries</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- map/ NearBy Stores-->
+        <div class="Map-Section" id="map">
+            <div class="heading">NearBy Stores</div>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2161767.0715498957!2d78.5573907005837!3d22.256805217635335!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1715683077366!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+
+        <!-- Reviews -->
+        <div class="reviews-section" id="reviews">
+            <div class="heading">Reviews</div>
+            <div class="reviews">
+
+                <div class="review-card" data-aos="zoom-in" data-aos-duration="8s">
+                    <div class="client-pic">
+                        <img src="images/client-1.jpg" alt="client">
+                    </div>
+                    <span class="cient-name">Ms. Akshara</span>
+                    <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+                </div>
+
+                <div class="review-card" data-aos="zoom-in" data-aos-duration="8s">
+                    <div class="client-pic">
+                        <img src="images/client 2.jpg" alt="client">
+                    </div>
+                    <span class="cient-name">Mr. John</span>
+                    <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+                </div>
+
+                <div class="review-card" data-aos="zoom-in" data-aos-duration="8s">
+                    <div class="client-pic">
+                        <img src="images/client-3.jpg" alt="client">
+                    </div>
+                    <span class="cient-name">Mr. Nick</span>
+                    <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+                </div>
+                
+            </div>
+        </div>
+
+        <!-- Contact -->
+        <div class="contact-section" id="contact">
+            <div class="heading">Get in Touch</div>
+            <div class="contact-options">
+
+                <div class="conatct-details">
+
+                    <div class="card" data-aos="slide-up" data-aos-duration="6s"> 
+                        <div class="contact-details-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="black"><path d="M798-120q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z"/></svg>
+                        </div>
+                        <div class="heading">Phone:</div>
+                        <span>+91 8005768458 <br> 
+                        +91 9045862317</span>
+                    </div>
+
+                    <div class="card" data-aos="slide-up" data-aos-duration="6s">
+                        <div class="contact-details-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="black"><path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z"/></svg>
+                        </div>
+                        <div class="heading">Email:</div>
+                        <span>abc@gmail.com<br> 
+                        xyz@gmail.com</span>
+                    </div>
+
+                    <div class="card" data-aos="slide-up" data-aos-duration="6s">
+                        <div class="contact-details-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="black"><path d="m600-120-240-84-186 72q-20 8-37-4.5T120-170v-560q0-13 7.5-23t20.5-15l212-72 240 84 186-72q20-8 37 4.5t17 33.5v560q0 13-7.5 23T812-192l-212 72Zm-40-98v-468l-160-56v468l160 56Zm80 0 120-40v-474l-120 46v468Zm-440-10 120-46v-468l-120 40v474Zm440-458v468-468Zm-320-56v468-468Z"/></svg>
+                        </div>
+                        <div class="heading">Address:</div>
+                        <span>Malegaon, Maharashtra, India- 423205</span>
+                    </div>
+                </div>
+
+                <div class="contact-form" data-aos="zoom-in" data-aos-duration="6s">
+                    <input type="text" name="name" id="name" placeholder="Name">
+                    <input type="email" name="email" id="email" placeholder="Email">
+                    <input type="tel" name="number" id="number" min="10" max="10" placeholder="Contact no.">
+                    <textarea name="message" id="message" placeholder="Message..."></textarea>
+                    <button>Send Message</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer-section">Developed and Designed by Siddhi More.</div>
+
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
